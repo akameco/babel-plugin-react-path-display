@@ -21,7 +21,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage --ci --runInBand",
-    "test:ci": "yarn validate",
+    "test:ci": "yarn lint && yarn flow && yarn test:cov && yarn add:coveralls",
+    "add:coveralls": "cat ./coverage/lcov.info | coveralls",
     "validate": "yarn lint && yarn flow && yarn test"
   },
   "lint-staged": {
