@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`React以外のクラスは変換しない 1`] = `
+"
+export default class Link {
+  render() {
+    return <div>hello world</div>
+  }
+}
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+export default class Link {
+  render() {
+    return <div>hello world</div>;
+  }
+}
+"
+`;
+
+exports[`SFCの場合は変換しない 1`] = `
+"
+import React from 'react'
+
+function Link() {
+  return <div>hello</div>
+}
+
+export default Link
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import React from 'react';
+
+function Link() {
+  return <div>hello</div>;
+}
+
+export default Link;
+"
+`;
+
+exports[`displayNameがすでにある場合は変換しない 1`] = `
+"
+import React from 'react'
+
+export default class Link extends React.Component {
+  static displayName = 'Link'
+  render() {
+    return <div>hello world</div>
+  }
+}
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import React from 'react';
+
+export default class Link extends React.Component {
+  static displayName = 'Link';
+  render() {
+    return <div>hello world</div>;
+  }
+}
+"
+`;
+
+exports[`displayName以外のstatic class propertyがある場合 1`] = `
+"
+import React from 'react'
+
+export default class Link extends React.Component {
+  static hello = 'hello'
+  render() {
+    return <div>hello world</div>
+  }
+}
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import React from 'react';
+
+export default class Link extends React.Component {
+  static hello = 'hello';
+  render() {
+    return <div>hello world</div>;
+  }
+  static displayName = 'src.index.test.Link';
+}
+"
+`;
+
+exports[`ファイルパスに従って、displayNameを作成する 1`] = `
+"
+import React from 'react'
+
+export default class Link extends React.Component {
+  render() {
+    return <div>hello world</div>
+  }
+}
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import React from 'react';
+
+export default class Link extends React.Component {
+  render() {
+    return <div>hello world</div>;
+  }
+  static displayName = 'src.index.test.Link';
+}
+"
+`;
