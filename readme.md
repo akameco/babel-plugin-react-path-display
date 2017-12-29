@@ -1,4 +1,5 @@
 # babel-plugin-react-path-display
+
 [![Build Status](https://travis-ci.org/akameco/babel-plugin-react-path-display.svg?branch=master)](https://travis-ci.org/akameco/babel-plugin-react-path-display)
 [![Coverage Status](https://coveralls.io/repos/github/akameco/babel-plugin-react-path-display/badge.svg?branch=master)](https://coveralls.io/github/akameco/babel-plugin-react-path-display?branch=master)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
@@ -7,13 +8,11 @@
 
 > babel plugin for react display name with file path prefix.
 
-
 ## Install
 
 ```
 $ yarn add --dev babel-plugin-react-path-display
 ```
-
 
 ## Usage
 
@@ -55,8 +54,11 @@ export default class Link extends React.Component {
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 | [<img src="https://avatars2.githubusercontent.com/u/4002137?v=4" width="100px;"/><br /><sub>akameco</sub>](http://akameco.github.io)<br />[💻](https://github.com/akameco/typed-assign/commits?author=akameco "Code") [📖](https://github.com/akameco/typed-assign/commits?author=akameco "Documentation") [⚠️](https://github.com/akameco/typed-assign/commits?author=akameco "Tests") [🚇](#infra-akameco "Infrastructure (Hosting, Build-Tools, etc)") |
-| :---: |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
