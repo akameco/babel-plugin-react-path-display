@@ -1,5 +1,7 @@
 # babel-plugin-react-path-display
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/akameco/babel-plugin-react-path-display.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/akameco/babel-plugin-react-path-display.svg?branch=master)](https://travis-ci.org/akameco/babel-plugin-react-path-display)
 [![Coverage Status](https://coveralls.io/repos/github/akameco/babel-plugin-react-path-display/badge.svg?branch=master)](https://coveralls.io/github/akameco/babel-plugin-react-path-display?branch=master)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
